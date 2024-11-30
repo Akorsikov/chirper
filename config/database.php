@@ -84,12 +84,12 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'url' => env('DB_URL', 'postgresql://chirper_db_5y11_user:7K7o0VQJIf2k4abMDy3EP6aSBEKlwwS7@dpg-ct3gfhq3esus73f6oo10-a.frankfurt-postgres.render.com:500/chirper_db_5y11'),
-            'host' => env('DB_HOST', 'dpg-ct3gfhq3esus73f6oo10-a'),
+            'url' => env('DB_URL'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'chirper_db_5y11'),
-            'username' => env('DB_USERNAME', 'chirper_db_5y11_user'),
-            'password' => env('DB_PASSWORD', '7K7o0VQJIf2k4abMDy3EP6aSBEKlwwS7'),
+            'database' => env('DB_DATABASE', 'laravel'),
+            'username' => env('DB_USERNAME', 'root'),
+            'password' => env('DB_PASSWORD', ''),
             'charset' => env('DB_CHARSET', 'utf8'),
             'prefix' => '',
             'prefix_indexes' => true,
